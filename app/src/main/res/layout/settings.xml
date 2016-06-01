@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تنظیم دمای گرمایشی"
+        android:layout_gravity="right" />
+    <me.angrybyte.numberpicker.view.ActualNumberPicker
+        android:id="@+id/setHeater"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/background"
+        app:bar_color="#000000"
+        app:bar_width="1dp"
+        app:bars_count="26"
+        app:controls_color="@android:color/white"
+        app:draw_over_controls="true"
+        app:draw_over_text="false"
+        app:fast_controls_color="@android:color/darker_gray"
+        app:highlight_color="#FFFF3040"
+        app:max_value="45"
+        app:min_value="20"
+        app:selection_color="#A0FF3040"
+        app:show_bars="true"
+        app:show_controls="false"
+        app:show_fast_controls="false"
+        app:show_highlight="true"
+        app:show_text="true"
+        app:text_color="@android:color/white"
+        app:text_size="16sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تنظیم دمای سرمایشی"
+        android:layout_gravity="right" />
+
+    <me.angrybyte.numberpicker.view.ActualNumberPicker
+        android:id="@+id/setCooler"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/background"
+        app:bar_color="#000000"
+        app:bar_width="1dp"
+        app:bars_count="26"
+        app:controls_color="@android:color/white"
+        app:draw_over_controls="true"
+        app:draw_over_text="false"
+        app:fast_controls_color="@android:color/darker_gray"
+        app:highlight_color="#FFFF3040"
+        app:max_value="20"
+        app:min_value="0"
+        app:selection_color="#A0FF3040"
+        app:show_bars="true"
+        app:show_controls="false"
+        app:show_fast_controls="false"
+        app:show_highlight="true"
+        app:show_text="true"
+        app:text_color="@android:color/white"
+        app:text_size="16sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ذخیره"
+        android:id="@+id/setSettings"
+        android:layout_gravity="right" />
+</LinearLayout>

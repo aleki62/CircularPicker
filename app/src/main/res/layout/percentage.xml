@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<NumberPicker-->
+        <!--android:id="@+id/numberPicker1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="64dp"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:background="@drawable/background"/>-->
+
+
+    <me.angrybyte.numberpicker.view.ActualNumberPicker
+        android:id="@+id/actual_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:background="@drawable/background"
+        app:bar_color="#000000"
+        app:bar_width="1dp"
+        app:bars_count="26"
+        app:controls_color="@android:color/white"
+        app:draw_over_controls="true"
+        app:draw_over_text="false"
+        app:fast_controls_color="@android:color/darker_gray"
+        app:highlight_color="#FFFF3040"
+        app:max_value="45"
+        app:min_value="0"
+        app:selection_color="#A0FF3040"
+        app:show_bars="true"
+        app:show_controls="false"
+        app:show_fast_controls="false"
+        app:show_highlight="true"
+        app:show_text="true"
+        app:text_color="@android:color/white"
+        app:text_size="16sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b1"
+        android:text="press for get Value"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="144dp"
+        android:layout_gravity="center_horizontal" />
+
+</LinearLayout>

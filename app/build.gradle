@@ -1,0 +1,47 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+//    renderscriptTargetApi 22
+//    renderscriptSupportModeEnabled true
+
+    defaultConfig {
+        applicationId "com.mohammad.circularpicker"
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url "https://jitpack.io" }
+
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'me.angrybyte.picker:picker:1.2.0'
+    compile 'com.oguzdev:CircularFloatingActionMenu:1.0.2'
+    compile 'me.mattlogan.artiste:artiste:4.0.0'
+    compile 'com.github.florent37:viewanimator:1.0.3@aar'
+    compile 'com.github.supervital:swipenumberpicker:1.0.3'
+    compile 'com.wefika:horizontal-picker:1.1.1'
+    compile 'com.pushlink:pushlink-android:5.4.4'
+
+    compile 'com.google.android.gms:play-services-appindexing:8.1.0'
+}
